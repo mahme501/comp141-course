@@ -1,0 +1,18 @@
+title: COMP141
+description: >-
+  This is my first college computer class that happens to be in the virtual
+  setup. it is also asynchronous so self-taught basically. I am proud. 
+template:
+  repo: comp141-template
+  name: comp141
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
