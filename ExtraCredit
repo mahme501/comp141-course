@@ -1,0 +1,8 @@
+classname ="$1" #Arguments passed are mapped to $1, $2, ... 
+#check that its not an illegal file name 
+if {{ $1 =~ [:punct:] ]]; then 
+  echo "$1 is not a valid Java classname"
+  exit 2
+  fi
+  
+  cat << _EOF_ > $filename
